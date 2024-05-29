@@ -1,0 +1,19 @@
+--- cmake/CMakeLists.txt.orig	2024-05-15 07:14:29 UTC
++++ cmake/CMakeLists.txt
+@@ -556,6 +556,7 @@ endif()
+       endif()
+     endif()
+ endif()
++set(Patch_EXECUTABLE "%%LOCALBASE%%/bin/gpatch")
+ if(Patch_FOUND)
+   message("Patch found: ${Patch_EXECUTABLE}")
+ endif()
+@@ -1767,7 +1768,7 @@ if (BUILD_PKGCONFIG_FILES)
+    configure_file(${CMAKE_CURRENT_SOURCE_DIR}/libonnxruntime.pc.cmake.in
+     ${CMAKE_CURRENT_BINARY_DIR}/libonnxruntime.pc @ONLY)
+   install( FILES  ${CMAKE_CURRENT_BINARY_DIR}/libonnxruntime.pc DESTINATION
+-    ${CMAKE_INSTALL_LIBDIR}/pkgconfig )
++    ${CMAKE_INSTALL_PREFIX}/libdata/pkgconfig )
+ endif()
+ 
+ if (onnxruntime_BUILD_OPSCHEMA_LIB AND onnxruntime_ENABLE_TRAINING)

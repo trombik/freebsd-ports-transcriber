@@ -1,0 +1,31 @@
+--- cmake/patches/onnx/onnx.patch.orig	2024-05-29 09:31:37 UTC
++++ cmake/patches/onnx/onnx.patch
+@@ -2,6 +2,28 @@ +++ b/CMakeLists.txt
+ index 6d7ca846..69aa622f 100644
+ --- a/CMakeLists.txt
+ +++ b/CMakeLists.txt
++@@ -236,8 +236,8 @@
++     include(FetchContent)
++     message("Loading Dependencies URLs ...")
++     # Reference: https://github.com/abseil/abseil-cpp/releases/tag/20230125.3
++-    set(AbseilURL https://github.com/abseil/abseil-cpp/archive/refs/tags/20230125.3.tar.gz)
++-    set(AbseilSHA1 e21faa0de5afbbf8ee96398ef0ef812daf416ad8)
+++    set(AbseilURL %%DISTDIR%%/%%ONNX_ABSEIL_FILE%%)
+++    set(AbseilSHA1 %%ONNX_ABSEIL_SHA1%%)
++     FetchContent_Declare(
++       Abseil
++       URL ${AbseilURL}
++@@ -254,8 +254,8 @@
++     # ABSL_ROOT_DIR is required by Protobuf.
++     set(ABSL_ROOT_DIR ${abseil_SOURCE_DIR})
++     message(STATUS "Abseil source dir:" ${ABSL_ROOT_DIR})
++-    set(ProtobufURL https://github.com/protocolbuffers/protobuf/releases/download/v22.3/protobuf-22.3.tar.gz)
++-    set(ProtobufSHA1 310938afea334b98d7cf915b099ec5de5ae3b5c5)
+++    set(ProtobufURL %%DISTDIR%%/%%ONNX_PROTOBUF_FILE%%)
+++    set(ProtobufSHA1 %%ONNX_PROTOBUF_SHA1%%)
++     FetchContent_Declare(
++       Protobuf
++       URL ${ProtobufURL}
+ @@ -499,6 +499,7 @@ if (MSVC)
+    endif()
+  else()
