@@ -1,0 +1,17 @@
+TIMESTAMP = 1717132865
+SHA256 (OpenNMT-CTranslate2-4.3.0-v4.3.0_GH0.tar.gz) = 42e63e7d73fe69e44930536e4529f6413b7af43209fab73a9f93811db84a8b3e
+SIZE (OpenNMT-CTranslate2-4.3.0-v4.3.0_GH0.tar.gz) = 3362623
+SHA256 (google-cpu_features-8a494eb_GH0.tar.gz) = b396d2e4df35fa01754af32bd0829cfcc5e2c0a9c374ce654a860ab88cd272a5
+SIZE (google-cpu_features-8a494eb_GH0.tar.gz) = 86001
+SHA256 (NVIDIA-cutlass-bbe579a_GH0.tar.gz) = 4039b6d08eed4cbdfa35a564dc5bad46152e7212f9880121aff9369d5ccacba6
+SIZE (NVIDIA-cutlass-bbe579a_GH0.tar.gz) = 23351713
+SHA256 (jarro2783-cxxopts-c74846a_GH0.tar.gz) = 44b946dd9a67b83b4818eecfd75dd036d50a5a2e1d871ee31c687682aa3c4334
+SIZE (jarro2783-cxxopts-c74846a_GH0.tar.gz) = 97039
+SHA256 (google-googletest-b7d472f_GH0.tar.gz) = 20bad018b9f4c3251b3738518ea27050b1eae5e2e7a5bcb471261573f41c473e
+SIZE (google-googletest-b7d472f_GH0.tar.gz) = 870894
+SHA256 (google-ruy-363f252_GH0.tar.gz) = 40b7c2e60bfc13a4f129ddf5aa82015087c33f7633f10d3f97dd116d984003aa
+SIZE (google-ruy-363f252_GH0.tar.gz) = 282190
+SHA256 (gabime-spdlog-76fb40d_GH0.tar.gz) = 5040e48484db80d661598d520a93bdb68d74d3898352954e48fdf33a1fabd21c
+SIZE (gabime-spdlog-76fb40d_GH0.tar.gz) = 368674
+SHA256 (NVIDIA-thrust-d997cd3_GH0.tar.gz) = cd48410b616da3ed4f819ffd6cf0e50b1611f05b582a435b1b9d7b2c65adcb72
+SIZE (NVIDIA-thrust-d997cd3_GH0.tar.gz) = 978975
