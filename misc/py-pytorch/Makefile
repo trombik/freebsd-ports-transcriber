@@ -27,7 +27,6 @@ BUILD_DEPENDS=	cmake:devel/cmake-core \
 		${PYTHON_PKGNAMEPREFIX}pyyaml>=0:devel/py-pyyaml@${PY_FLAVOR}
 LIB_DEPENDS=	libabsl_base.so:devel/abseil \
 		libblis.so:math/blis \
-		libmpi_cxx.so:net/openmpi4 \
 		libonnx.so:misc/onnx \
 		libopenblas.so:math/openblas \
 		libpthreadpool.so:devel/pthreadpool \
