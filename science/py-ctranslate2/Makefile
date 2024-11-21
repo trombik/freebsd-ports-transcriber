@@ -1,6 +1,7 @@
-PORTNAME=	py-ctranslate2
+PORTNAME=	ctranslate2
 DISTVERSION=	4.3.0
-CATEGORIES=	science
+CATEGORIES=	science python
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	y@trombik.org
 COMMENT=	Fast inference engine for Transformer models (python)
