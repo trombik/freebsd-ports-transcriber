@@ -1,0 +1,6 @@
+ster-whisper is a reimplementation of OpenAI's Whisper model using CTranslate2,
+which is a fast inference engine for Transformer models.
+
+This implementation is up to 4 times faster than openai/whisper for the same
+accuracy while using less memory. The efficiency can be further improved with
+8-bit quantization on both CPU and GPU.
